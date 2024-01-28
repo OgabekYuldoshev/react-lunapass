@@ -1,0 +1,60 @@
+.#{$rlp-namespace}__loading {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 2rem;
+
+  &--content {
+    width: 6rem;
+    height: 6rem;
+    border-right: 4px solid #1a1a1a;
+    border-radius: 100%;
+    animation: spinRight 800ms linear infinite;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      display: block;
+      position: absolute;
+      top: calc(50% - 2rem);
+      left: calc(50% - 2rem);
+      border-left: 3px solid #1a1a1a;
+      border-radius: 100%;
+      animation: spinLeft 800ms linear infinite;
+    }
+
+    &:after {
+      width: 2rem;
+      height: 2rem;
+      top: calc(50% - 1rem);
+      left: calc(50% - 1rem);
+      border: 0;
+      border-right: 2px solid #1a1a1a;
+      animation: none;
+    }
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
