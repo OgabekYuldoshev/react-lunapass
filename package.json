@@ -1,6 +1,6 @@
 {
     "name": "react-lunapass",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "React LunaPass SDK for Web",
     "type": "module",
     "source": "src/index.ts",
@@ -17,9 +17,6 @@
         },
         "./dist/react-lunapass.css": "./dist/react-lunapass.css",
         "./package.json": "./package.json"
-    },
-    "engines": {
-        "node": ">=14"
     },
     "packageManager": "pnpm",
     "repository": {
@@ -50,8 +47,8 @@
     "author": "Ogabek Yuldoshev <https://www.yuldashoff.uz/>",
     "license": "MIT",
     "peerDependencies": {
-        "react": ">=14.x",
-        "react-dom": ">=14.x"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
