@@ -1,6 +1,6 @@
 {
     "name": "react-lunapass",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "React LunaPass SDK for Web",
     "type": "module",
     "source": "src/index.ts",
