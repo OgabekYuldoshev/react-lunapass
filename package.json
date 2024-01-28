@@ -1,6 +1,6 @@
 {
     "name": "react-lunapass",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "React LunaPass SDK for Web",
     "type": "module",
     "source": "src/index.ts",
@@ -47,8 +47,8 @@
     "author": "Ogabek Yuldoshev <https://www.yuldashoff.uz/>",
     "license": "MIT",
     "peerDependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react": "<=16.x",
+        "react-dom": "<=16.x"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
